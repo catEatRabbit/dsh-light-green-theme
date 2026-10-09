@@ -1,0 +1,23 @@
+# 依赖：DSH 会把插件装进 profile 的 node_modules，仓库里不需要
+node_modules/
+
+# 打包产物
+*.tgz
+
+# npm 本地缓存（如果把 cache 指到了工作区）
+.npm-cache/
+
+# DSH 运行时产物（如果这个仓库被当作 profile 用过）
+.plugin-manager/
+cordis.yml
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志
+*.log
+npm-debug.log*

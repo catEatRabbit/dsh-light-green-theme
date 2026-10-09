@@ -1,0 +1,7 @@
+# dsh-light-green-theme 的组合包层。
+# 该行的 name 必须与 package.json 的 name 一致：浏览器半侧的模块身份取自
+# 清单的包名（dsh-client-modules 的 graphRow(packageName, …)），
+# bundle 里 window.__ModuleLoader__.load({ id }) 必须与之一致。
+- insert:
+    - id: light-green-theme
+      name: 'dsh-light-green-theme'

@@ -1,0 +1,71 @@
+{
+  "name": "dsh-light-green-theme",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "DSH 浅绿主题：一套从截图逐点采样的浅绿配色，覆盖 --dsw-* 令牌，并让选中的菜单与会话行加粗。A light-green theme plugin for DeepSeek Harness.",
+  "license": "MIT",
+  "author": "catEatRabbit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catEatRabbit/dsh-light-green-theme.git"
+  },
+  "homepage": "https://github.com/catEatRabbit/dsh-light-green-theme#readme",
+  "bugs": {
+    "url": "https://github.com/catEatRabbit/dsh-light-green-theme/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "screenshots.json",
+    "LICENSE",
+    "README.md",
+    "SHARING.md",
+    "palette-preview.png",
+    "verify.mjs",
+    "tools"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "theme",
+    "light-green",
+    "浅绿",
+    "主题",
+    "换肤"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-client-ui-theme": ">=0.1.7-rc.1 <0.2.0 || >=0.2.0-rc.1 <0.3.0-0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-client-ui-theme": {
+      "optional": true
+    }
+  }
+}

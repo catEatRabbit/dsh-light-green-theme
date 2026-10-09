@@ -1,0 +1,8 @@
+# 仓库里统一存 LF，检出也用 LF —— 避免 Windows 上 CRLF 把 diff 弄成一团。
+# 插件代码/清单/YAML 用 LF 在各平台都没问题。
+* text=auto eol=lf
+
+# 明确二进制，别被当文本处理
+*.png binary
+*.woff2 binary
+*.ico binary
