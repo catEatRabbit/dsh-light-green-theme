@@ -6,12 +6,11 @@ DSH 客户端的浅绿配色主题。覆盖 `--dsw-*` 令牌，并把选中的�
 
 ## 安装
 
-在 DSH 里直接装：
+### 方式一：DSH 界面安装（推荐）
 
 1. 左侧栏点「插件」，再点「添加插件」
-
 2. 输入框里粘下面这行，点「安装」
-   
+
    ```
    github:catEatRabbit/dsh-light-green-theme
    ```
@@ -20,7 +19,9 @@ DSH 客户端的浅绿配色主题。覆盖 `--dsw-*` 令牌，并把选中的�
 
 装完就是浅绿的，不用重启。
 
-**用命令行的话**（`dsh web` 这类 profile）：
+### 方式二：命令行安装
+
+适用于 `dsh web` 这类 profile：
 
 ```
 dsh plugin --profile web add github:catEatRabbit/dsh-light-green-theme
@@ -28,7 +29,11 @@ dsh plugin --profile web add github:catEatRabbit/dsh-light-green-theme
 
 桌面版的 `desktop` profile 不能用命令行装，它被应用独占管理。
 
-**GitHub 连不上时**（国内网络常见）：在仓库页面点绿色的 `Code` 按钮 → `Download ZIP`，解压到任意目录，把第 2 步改成粘那个目录的绝对路径。
+### 方式三：本地安装
+
+1. 在仓库页面点绿色的 `Code` 按钮 → `Download ZIP`
+2. 解压到任意目录
+3. 按方式一操作，第 2 步改成粘那个目录的绝对路径
 
 ## 配色
 
