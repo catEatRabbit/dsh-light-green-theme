@@ -1,5 +1,5 @@
 /**
- * dsh-my-theme 自检 —— 用桩模拟 shell 的模块加载器，验证 lib/client.js 的 bundle 格式。
+ * dsh-light-green-theme 自检 —— 用桩模拟 shell 的模块加载器，验证 lib/client.js 的 bundle 格式。
  *
  *   node verify.mjs
  *
